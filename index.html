@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Écologie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nerko+One&family=Salsa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/favico.ico">
+  </head>
+  <body>
+
+
+    <div id="password-overlay" class="overlay">
+      <div class="password-container">
+        <h1>Bjr, tu as été convoqué pour ce qu'il y'a dedans. Es-tu prête ?</h1>
+        <p class="mwidpwis">Mwidpwis</p>
+        <input type="password" id="password-input" placeholder="Aaaaaallez la Monetis, Aaaaaaaaallez!">
+        <button id="submit-password">Entrer</button>
+        <p id="error-message" class="error-message"></p>
+        <div class="success-message hidden"></div>
+      </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+      <div id="legend">
+        <h2>Légende</h2>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #06d106;"></div>
+            Facile (1pt)
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #3d44ff;"></div>
+            Medium (3pt)
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #ff6219;"></div>
+            Difficile (5pt)
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #f70202;"></div>
+            Super (7pt)
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #9807db;"></div>
+            Monetis (9pts)
+        </div>
+
+      </div>
+
+      <div id="board"></div>
+      <img src="img/team-monefados.png" alt="Logo" class="logo">
+
+      <div id="progress-container">
+        <div id="progress-bar">
+          <div id="progress-fill"></div>
+          <img src="img/gift1.png" class="gift-icon" id="gift1">
+          <img src="img/gift2.png" class="gift-icon" id="gift2">
+          <img src="img/gift3.png" class="gift-icon" id="gift3">
+          <img src="img/gift4.png" class="gift-icon" id="gift4">
+        </div>
+        <div id="score-label">
+          <span id="score-value">0</span>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="video-container" class="hidden">
+      <button id="close-video" class="close-btn">×</button>
+      <iframe id="youtube-video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div id="qr-container" class="qr-container hidden">
+      <button id="close-qr-btn" class="close-qr-btn">×</button>
+      <img id="qr-code" src="img/qrcode.png" alt="QR Code">
+    </div>
+
+    <script src="index.js"></script>
+
+
+  </body>
+</html>
